@@ -1,0 +1,87 @@
+/**
+ * @todo
+ *
+ * Investigate non-deliberate paragraphs in bullets
+ * Paragraph keep together (for bullets)
+ * Paragraph keep with next (for non-bullets)
+ *		OR handle orphans/widows
+ * Page numbers in footer
+ * Git rev number and date in footer
+ * Switch to Computer Modern
+ *
+ * Done:
+ *
+ * Title/author block
+ * Special margin for author block
+ * Page size as A4 portrait
+ * Reset margins
+ * Font style
+ * Font size
+ * Formatting for filenames
+ * Formatting for inline code
+ * Formatting for code blocks
+ * Force page break between intro and content
+ */
+
+html {
+	font-family: serif;
+	font-size: 9.3pt;
+	text-align: justify;
+	/* font-family: "Computer Modern", serif; */
+}
+
+/* Block of code */
+pre code {
+	display: block;
+	padding: 4px;
+}
+
+/* Inline code and inline filename */
+code.code, code.filename {
+	font-family: monospace;
+	padding: 1px;
+}
+
+/* Both inline and block */
+pre code, code.code {
+	background-color: #eeeeee;	
+}
+
+#header {
+	margin-top: 8em;
+	margin-bottom: 4em;
+	text-align: center;
+}
+
+#header h1, #header h2, #header h3 {
+	font-weight: lighter;
+}
+
+#header h1 {
+	font-size: 2em;
+}
+
+#header h2 {
+	font-size: 1.6em;
+}
+
+#header h3 {
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+div.page-break {
+	page-break-before: always;
+}
+
+/* Try to avoid breaking inside a bullet */
+li {
+	break-inside: avoid-page;
+}
