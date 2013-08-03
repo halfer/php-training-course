@@ -7,9 +7,16 @@ The document is intended for educators needing prompter notes to talk students t
 
 The course is very practical, so a laptop per student is essential (one machine between two might work nicely though, as students can be encouraged to help each other). I've avoided the traditional route of doing too much on one topic, so I frequently switch from databases, to variable types, to introducing a new construct, to HTML, to talking about designing for the web. On purpose there are also no week indicators, as I think practical classes should go at the students' own pace.
 
-Presently I'm making just a PDF available, until I can persuade Pandoc to produce acceptable output. Once I publish the Markdown source, this will permit fork/merge collaboration. In the meantime, feel free to use the material, and/or suggest improvements in a ticket.
-
 Bear in mind that this material is in an early stage, and the material is subject to tweaks and reordering. You are welcome to link directly to this repo, but if you do, linking to a specific revision hash is recommended. Or, of course, grab a copy and distribute yourself. Copying is positively encouraged!
+
+Documents
+--
+
+The most up-to-date version is called "beginners-php.pdf", which is an OpenOffice document rendered to PDF. This isn't suitable for collaborative editing and merging, but features typesetting that I am happy with.
+
+I'm also including Markdown files and build scripts for Pandoc (to convert MD to HTML) and wkhtmltopdf (to convert HTML to PDF). This will permit collaborative editing, but there's no orphan control or keep-with-next switches. Thus, some work is required before this becomes the definitive version.
+
+In the meantime, feel free to use the material, and/or suggest improvements in a ticket.
 
 License
 --
