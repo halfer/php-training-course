@@ -24,7 +24,12 @@ pandoc \
 	source/en/docs/the-console.md \
 	source/en/docs/the-web-server.md \
 	source/en/docs/simple-html.md \
-	source/en/docs/variables-and-types.md
+	source/en/docs/variables-and-types.md \
+	source/en/docs/array-type.md \
+	source/en/docs/conditionals.md \
+	source/en/docs/for-loops.md \
+	source/en/docs/more-html.md \
+	source/en/docs/thinking-about-the-web.md
 
 # Remove the PDF
 rm ./php-training-course-en.pdf
