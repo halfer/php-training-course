@@ -10,10 +10,14 @@ Objectives:
 * Understand how to join strings together using the dot operator (“concatenation”)
 * Write a program (`variables_hello.php`) to store your name and render the following string in an HTML document or a console program:
 
-		Hello <name>, how are you?
+~~~
+Hello <name>, how are you?
+~~~
 
 * Write a program (`variables_calc.php`) to store three numbers (either integers or floats) in variables, store the result of a mathematical operation of your choice that involves them all, output all the numbers, and the result. Example:
 
-		My calculation is 1.5 + 4 / 2 and the result is 3.5
+~~~
+My calculation is 1.5 + 4 / 2 and the result is 3.5
+~~~
 
 * Modify `variables_calc.php` so that, rather than using the dot operator, you use some inline variables

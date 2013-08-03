@@ -5,9 +5,11 @@ Objectives:
 
 * Write a simple program that runs on the command line. The program can be as simple as:
 
-		<?php
-		echo “Hello world!\n”;
-		?>
+~~~
+<?php
+echo “Hello world!\n”;
+?>
+~~~
 
 * Be aware that console programs can be run on a timer
 * Learn that a server console is usually only available to server administrators
