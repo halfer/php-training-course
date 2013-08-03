@@ -1,0 +1,7 @@
+Here are a few conventions that authors should stick to for this work.
+
+- Titles should be written in sentence case, not title case
+- Inline code should be formatted using `My inline code`{.code}
+- Block code should be formatted using ~~~ (using tab/space indents on their own sometimes causes random paragraphs in unordered lists)
+- Bullet points should have no trailing full stop. On the occasions they are comprised of more than one sentence, only the last sentence should omit the full stop
+- Links should be hyperlinked, but without the default http:// prefix. Links that use SSL should be prefixed with https://.
