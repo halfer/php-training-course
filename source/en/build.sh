@@ -2,8 +2,7 @@
 #
 # Can't use --input markdown_strict, as we're using extensions
 #
-# We can change the margins thus if we wish:
-#	-V geometry:"top=3cm, bottom=3cm, left=3cm, right=3cm"
+# Files are listed explicitly so users can re-order the material in their own branches if they wish
 
 # Remove the HTML
 rm ./php-training-course-en.html
