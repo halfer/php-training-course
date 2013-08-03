@@ -1,7 +1,15 @@
-Here are a few conventions that authors should stick to for this work.
+Here are a few conventions that authors should stick to for this work:
 
 - Titles should be written in sentence case, not title case
 - Inline code should be formatted using `My inline code`{.code}
 - Block code should be formatted using ~~~ (using tab/space indents on their own sometimes causes random paragraphs in unordered lists)
 - Bullet points should have no trailing full stop. On the occasions they are comprised of more than one sentence, only the last sentence should omit the full stop
 - Links should be hyperlinked, but without the default http:// prefix. Links that use SSL should be prefixed with https://.
+
+Ignored files:
+
+Note that this repo has been updated to ignore changes to the course-specific notes, thus:
+
+    git update-index --assume-unchanged source/en/docs/course-specific.md
+
+This can be reversed in branches using --no-assume-unchanged if you wish, but obviously there's no value in pushing changes to this file to the master copy.
