@@ -12,7 +12,6 @@ pandoc \
 	--output ./php-training-course-en.html \
 	--css ./source/styles.css \
 	source/en/docs/title-block.md \
-	source/styles.md \
 	source/en/docs/preface.md \
 	source/en/docs/course-specific.md \
 	source/en/docs/licence.md \
