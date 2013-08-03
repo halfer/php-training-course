@@ -4,3 +4,5 @@ Items to fix
 1. See also paragraph keep-together (or orphan control) noted in styles.css
 2. Is it possible to remove author/date details from PDF bookmarks?
 3. Can we apply smart quotes to ordinary quotes automatically in pandoc?
+4. Footers need more top margin
+5. Footers should be in serif font, but appear to be in sans serif
