@@ -12,9 +12,9 @@ Bear in mind that this material is in an early stage, and the material is subjec
 Documents
 --
 
-The most up-to-date version is called "beginners-php.pdf", which is an OpenOffice document rendered to PDF. This isn't suitable for collaborative editing and merging, but features typesetting that I am happy with.
+The most up-to-date version is called "beginners-php.pdf", which is an OpenOffice document rendered to PDF. This isn't suitable for collaborative editing and merging, but uses typesetting that I am happy with.
 
-I'm also including Markdown files and build scripts for Pandoc (to convert MD to HTML) and wkhtmltopdf (to convert HTML to PDF). This will permit collaborative editing, but there's no orphan control or keep-with-next switches. Thus, some work is required before this becomes the definitive version.
+I'm also including Markdown files and build scripts for `pandoc` (to convert MD to HTML) and `wkhtmltopdf` (to convert HTML to PDF). This will permit collaborative editing, but there's no orphan control or keep-with-next switches. Thus, some work is required before this becomes the definitive version.
 
 In the meantime, feel free to use the material, and/or suggest improvements in a ticket.
 
