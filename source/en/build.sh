@@ -29,7 +29,12 @@ pandoc \
 	source/en/docs/conditionals.md \
 	source/en/docs/for-loops.md \
 	source/en/docs/more-html.md \
-	source/en/docs/thinking-about-the-web.md
+	source/en/docs/thinking-about-the-web.md \
+	source/en/docs/intro-to-forms.md \
+	source/en/docs/while-loops.md \
+	source/en/docs/intro-to-algorithms.md \
+	source/en/docs/user-defined-functions.md \
+	source/en/docs/intro-to-css.md
 
 # Remove the PDF
 rm ./php-training-course-en.pdf
