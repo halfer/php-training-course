@@ -82,7 +82,7 @@ div.page-break {
 }
 
 li {
-	/* Try to avoid breaking inside a bullet, doesn't work for me' */
+	/* Try to avoid breaking inside a bullet, doesn't work for me */
 	break-inside: avoid-page;
 }
 
