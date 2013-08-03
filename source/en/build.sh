@@ -27,7 +27,7 @@ pandoc \
 	source/en/docs/variables-and-types.md
 
 # Remove the PDF
-rm ./php-training-course-en-via-html.pdf
+rm ./php-training-course-en.pdf
 
 # Then try to present this, using CSS3, as a formatted PDF
 wkhtmltopdf \
@@ -40,4 +40,4 @@ wkhtmltopdf \
 	--footer-font-name "serif" \
 	--footer-font-size 9 \
 	./php-training-course-en.html \
-	./php-training-course-en-via-html.pdf
+	./php-training-course-en.pdf
