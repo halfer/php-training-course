@@ -1,13 +1,11 @@
 /**
  * @todo
  *
- * Investigate non-deliberate paragraphs in bullets
  * Paragraph keep together (for bullets)
  * Paragraph keep with next (for non-bullets)
  *		OR handle orphans/widows
- * Page numbers in footer
  * Git rev number and date in footer
- * Switch to Computer Modern
+ * Switch to Computer Modern font
  *
  * Done:
  *
@@ -21,19 +19,21 @@
  * Formatting for inline code
  * Formatting for code blocks
  * Force page break between intro and content
+ * Page numbers in footer
+ * Investigate non-deliberate paragraphs in bullets
  */
 
 html {
 	font-family: serif;
 	font-size: 9.3pt;
 	text-align: justify;
-	/* font-family: "Computer Modern", serif; */
 }
 
 /* Block of code */
 pre code {
 	display: block;
 	padding: 4px;
+	margin-left: 3.3em;
 }
 
 /* Inline code and inline filename */
@@ -81,7 +81,17 @@ div.page-break {
 	page-break-before: always;
 }
 
-/* Try to avoid breaking inside a bullet */
 li {
+	/* Try to avoid breaking inside a bullet, doesn't work for me' */
 	break-inside: avoid-page;
+}
+
+ul {
+	/* Try to avoid breaking before a bullet list, doesn't work for me */
+	page-break-after: avoid;
+}
+
+p {
+	/* Not supported by Webkit: https://developer.mozilla.org/en-US/docs/Web/CSS/orphans */
+	orphans: 2;
 }
