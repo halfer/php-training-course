@@ -1,6 +1,11 @@
 TODO
 ==
 
+Course notes
+--
+
+1. "More about objects" needs to use the term properties rather than attributes
+
 General problems
 --
 
@@ -26,19 +31,19 @@ Problems with DOMPDF renderer
 
 	http://stackoverflow.com/a/12953400/472495
 
-3. Inline spans and code do not handle padding and margins correctly. I've added a workaround in the
-stylesheet using top and bottom borders:
+3. Inline spans and code do not handle padding and margins correctly. I've added a workaround in the stylesheet using top and bottom borders:
 
 	https://github.com/dompdf/dompdf/issues/690
 
-4. An unordered list item split over a page gets a bullet mark on the next page. Already raised here:
+4. In the "Introduction to objects" section, the code block appears to need a blank line to get it to wrap correctly. Also, is there a code block type that will wrap automatically?
+
+5. An unordered list item split over a page gets a bullet mark on the next page. Already raised here:
 
 	https://github.com/dompdf/dompdf/issues/683
 
 This doesn't currently affect this project since I'm avoiding a page break inside list items.
 
-5. I've not tried line-level orphan control yet, so if this comes up as a problem, I should add it to see
-if it helps.
+6. I've not tried line-level orphan control yet, so if this comes up as a problem, I should add it to see if it helps.
 
 Problems with wkhtmltopdf renderer
 --
