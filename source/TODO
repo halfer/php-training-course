@@ -1,8 +1,49 @@
-Items to fix
+TODO
+==
+
+General problems
 --
 
-1. See also paragraph keep-together (or orphan control) noted in styles.css
+1a. Retry Pandoc as	HTML renderer now DOMPDF is working
+1b. Retry wkhtmltopdf as HTML renderer now DOMPDF is working
+2. Can we apply smart quotes to ordinary quotes automatically in pandoc?
+3. Add git rev number and date in footer
+4. See if we can avoid having a bullet on its own:
+
+	http://stackoverflow.com/questions/18041146/should-css-orphan-operate-at-line-or-block-level
+
+DOMPDF does not support JS, but wkhtmltopdf does not support much in the way of page breaks. I'll live with
+this very minor issue for the time being.
+
+Problems with DOMPDF renderer
+--
+
+1. Heading bookmarks do not appear to be supported by DOMPDF:
+
+	http://stackoverflow.com/questions/8967191/how-to-create-bookmark-in-dompdf
+
+2. Add footer containing page number:
+
+	http://stackoverflow.com/a/12953400/472495
+
+3. Inline spans and code do not handle padding and margins correctly. I've added a workaround in the
+stylesheet using top and bottom borders:
+
+	https://github.com/dompdf/dompdf/issues/690
+
+4. An unordered list item split over a page gets a bullet mark on the next page. Already raised here:
+
+	https://github.com/dompdf/dompdf/issues/683
+
+This doesn't currently affect this project since I'm avoiding a page break inside list items.
+
+5. I've not tried line-level orphan control yet, so if this comes up as a problem, I should add it to see
+if it helps.
+
+Problems with wkhtmltopdf renderer
+--
+
+1. Can we keep a paragraph together with its following unordered list?
 2. Is it possible to remove author/date details from PDF bookmarks?
-3. Can we apply smart quotes to ordinary quotes automatically in pandoc?
-4. Footers need more top margin
-5. Footers should be in serif font, but appear to be in sans serif
+3. Footers need more top margin
+4. Footers should be in serif font, but appear to be in sans serif

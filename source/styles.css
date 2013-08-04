@@ -1,27 +1,3 @@
-/**
- * @todo
- *
- * Page numbers in footer
- * Git rev number and date in footer
- * Switch to Computer Modern font
- *
- * Done:
- *
- * Title/author block
- * Special margin for author block
- * Page size as A4 portrait
- * Reset margins
- * Font style
- * Font size
- * Formatting for filenames
- * Formatting for inline code
- * Formatting for code blocks
- * Force page break between intro and content
- * Investigate non-deliberate paragraphs in bullets
- * Paragraph keep together (for list items)
- * Keep paragraph with following unordered list
- */
-
 @page {
 	margin-left: 41mm;
 	margin-right: 48mm;
