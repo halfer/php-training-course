@@ -32,7 +32,11 @@ pandoc \
 	source/en/docs/while-loops.md \
 	source/en/docs/intro-to-algorithms.md \
 	source/en/docs/user-defined-functions.md \
-	source/en/docs/intro-to-css.md
+	source/en/docs/intro-to-css.md \
+	source/en/docs/intro-to-mysql.md \
+	source/en/docs/style.md \
+	source/en/docs/intro-to-objects.md \
+	source/en/docs/modifying-db-structure.md
 
 # Remove the PDF
 rm ./php-training-course-en.pdf

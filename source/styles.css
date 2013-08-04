@@ -17,11 +17,19 @@ pre code {
 	display: block;
 	padding: 4px;
 	margin-left: 3.3em;
+
+	/* No justification for code */
+	text-align: left;
+
+	/* Since we have nowrap on here, let's reduce the font size */
+	font-size: 0.8em;
 }
 
 /* Inline code and inline filename */
 code.code, code.filename {
 	font-family: monospace;
+
+	font-size: 0.9em;
 }
 
 code.code {
