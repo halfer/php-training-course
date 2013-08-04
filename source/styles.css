@@ -23,6 +23,14 @@
  * Investigate non-deliberate paragraphs in bullets
  */
 
+@page {
+	margin-left: 41mm;
+	margin-right: 48mm;
+	margin-top: 35mm;
+	margin-bottom: 35mm;
+	size: A4 portrait;
+}
+
 html {
 	font-family: serif;
 	font-size: 9.3pt;
@@ -57,14 +65,13 @@ pre code, code.code {
 	font-weight: lighter;
 }
 
+/* The header levels 1-3 are used for the title block */
 #header h1 {
 	font-size: 2em;
 }
-
 #header h2 {
 	font-size: 1.6em;
 }
-
 #header h3 {
 	font-size: 1.2em;
 }
@@ -75,6 +82,9 @@ h1 {
 
 h2 {
 	font-size: 1.1em;
+
+	/* Don't leave a heading dangling at the end */
+	page-break-after: avoid;
 }
 
 div.page-break {
@@ -82,16 +92,14 @@ div.page-break {
 }
 
 li {
-	/* Try to avoid breaking inside a bullet, doesn't work for me */
-	break-inside: avoid-page;
+	/* Try to avoid breaking inside a bullet */
+	page-break-inside: avoid;
+
+	/* I don't this this is supported by dompdf, but that's okay */
+	/*orphans: 2;*/
 }
 
 ul {
-	/* Try to avoid breaking before a bullet list, doesn't work for me */
-	page-break-after: avoid;
-}
-
-p {
-	/* Not supported by Webkit: https://developer.mozilla.org/en-US/docs/Web/CSS/orphans */
-	orphans: 2;
+	/* Try to avoid breaking before a bullet list */
+	page-break-before: avoid;
 }

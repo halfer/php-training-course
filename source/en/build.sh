@@ -37,15 +37,5 @@ pandoc \
 # Remove the PDF
 rm ./php-training-course-en.pdf
 
-# Then try to present this, using CSS3, as a formatted PDF
-wkhtmltopdf \
-	--margin-left 41mm \
-	--margin-right 48mm \
-	--margin-top 35mm \
-	--margin-bottom 35mm \
-	--page-size A4 \
-	--footer-center [page] \
-	--footer-font-name "serif" \
-	--footer-font-size 9 \
-	./php-training-course-en.html \
-	./php-training-course-en.pdf
+# Render HTML as PDF using dompdf library
+php ./convert.php
