@@ -36,7 +36,13 @@ pandoc \
 	source/en/docs/intro-to-mysql.md \
 	source/en/docs/style.md \
 	source/en/docs/intro-to-objects.md \
-	source/en/docs/modifying-db-structure.md
+	source/en/docs/modifying-db-structure.md \
+	source/en/docs/intro-to-exceptions.md \
+	source/en/docs/more-about-objects.md \
+	source/en/docs/updating-deleting-database.md \
+	source/en/docs/connecting-to-servers.md \
+	source/en/docs/interfacing-with-the-db.md \
+	source/en/docs/fizz-buzz.md
 
 # Remove the PDF
 rm ./php-training-course-en.pdf
