@@ -1,9 +1,7 @@
 /**
  * @todo
  *
- * Paragraph keep together (for bullets)
- * Paragraph keep with next (for non-bullets)
- *		OR handle orphans/widows
+ * Page numbers in footer
  * Git rev number and date in footer
  * Switch to Computer Modern font
  *
@@ -19,8 +17,9 @@
  * Formatting for inline code
  * Formatting for code blocks
  * Force page break between intro and content
- * Page numbers in footer
  * Investigate non-deliberate paragraphs in bullets
+ * Paragraph keep together (for list items)
+ * Keep paragraph with following unordered list
  */
 
 @page {
@@ -47,7 +46,14 @@ pre code {
 /* Inline code and inline filename */
 code.code, code.filename {
 	font-family: monospace;
-	padding: 1px;
+}
+
+code.code {
+	/* Span padding doesn't have a height in dompdf, raise ticket */
+	padding: 0 3px;
+	/* A padding of 3px should work, but this is a good dompdf fix for now */
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 /* Both inline and block */
@@ -79,12 +85,13 @@ pre code, code.code {
 h1 {
 	font-size: 1.3em;
 }
-
 h2 {
 	font-size: 1.1em;
+}
 
-	/* Don't leave a heading dangling at the end */
-	page-break-after: avoid;
+/* Don't leave a heading dangling at the end */
+h1, h2 {
+	page-break-after: avoid;	
 }
 
 div.page-break {
@@ -94,12 +101,11 @@ div.page-break {
 li {
 	/* Try to avoid breaking inside a bullet */
 	page-break-inside: avoid;
-
-	/* I don't this this is supported by dompdf, but that's okay */
-	/*orphans: 2;*/
 }
 
 ul {
 	/* Try to avoid breaking before a bullet list */
 	page-break-before: avoid;
+	
+	/* It would be nice to avoid bullet items on their own, not sure how to do this */
 }
