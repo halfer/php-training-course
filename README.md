@@ -14,9 +14,37 @@ Documents
 
 The most up-to-date version is called "beginners-php.pdf", which is an OpenOffice document rendered to PDF. This isn't suitable for collaborative editing and merging, but uses typesetting that I am happy with.
 
-I'm also including Markdown files and build scripts for `pandoc` (to convert MD to HTML) and `wkhtmltopdf` (to convert HTML to PDF). This will permit collaborative editing, but there's no orphan control or keep-with-next switches. Thus, some work is required before this becomes the definitive version.
+I'm also including Markdown files and build scripts for Pandoc (to convert MD to HTML) and DOMPDF (to convert HTML to PDF). This will permit collaborative editing, but the material is not as complete and the typesetting isn't fully set up yet. Thus, some work is required before this becomes the definitive version.
 
 In the meantime, feel free to use the material, and/or suggest improvements in a ticket.
+
+Building the PDF
+--
+
+If you would like to try building from the Markdown, you'll need the following installed:
+
+* Pandoc
+* PHP 5.2 or later
+* Git
+
+Install this repository on your machine using the following:
+
+    git clone https://github.com/halfer/php-training-course
+    cd php-training-course
+    git submodule update --recursive
+
+That will fetch DOMPDF and its dependencies. From there you can run this *nix script:
+
+    ./source/en/build.sh
+
+There's no Windows script yet, but perhaps in time a Windows user will provide one. It should be quite easy to hack something together, if you have a copy of Windows to test it on.
+
+Once you have this working,	create a repository on Github, e.g. "my-lovely-php-class". Then create your own branch locally:
+
+	git checkout -b my-lovely-php-class
+	git remote add upstream https://github.com/yourusername/YourRepo.git
+
+You can then make changes, commit and push to your repository. From there, if you have material that would be of interest to the course, a pull request can be made. Don't forget to consult the STYLE guide to ensure your changes/additions fit into the vision of the project.
 
 License
 --
