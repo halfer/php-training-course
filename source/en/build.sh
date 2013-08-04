@@ -38,4 +38,4 @@ pandoc \
 rm ./php-training-course-en.pdf
 
 # Render HTML as PDF using dompdf library
-php ./convert.php
+php ./convert.php php-training-course-en.html php-training-course-en.pdf
